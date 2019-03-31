@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content"IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scake=1">
+
+    <script type="text/javascript" src = "/Scripts/script.js"></script>
+    <link rel="stylesheet" href="/Style/style.css">
+    <title>About Us</title>
+
+  </head>
+
+  <body>
+    <div>
+
+          <div id ="fridgeTitle" >About</div>
+
+          <div class="tabs">
+
+                <form  action="/fridge"> <button type="submit" class = "tab" > My Fridge </button>
+                </form>
+
+                <form  action="/recipes"> <button type="submit" class = "tab" > Recipes </button>
+                </form>
+
+                <form  action="/aboutus"> <button type="submit" class = "tababoutus" > About Us </button>
+                </form>
+
+          </div>
+
+
+        <form id="temp" class="signOut" action="/signIn" method="post">
+          <input type="submit" name="" value="Sign Out" id = "signOut">
+          <p id = "loggedIn">{{username}} is logged in</p>
+        </form>
+
+    <div class="wrapperaboutus">
+      <div id="leftaboutus">
+        <div class="container">
+          <img src="/Style/Olivia.jpg" alt=""style="width:360px;height:360px;border-radius:360px;" >
+          <div class="overlay">
+            <div class="text">
+              <p style = "font-size:30px;"></p>
+              With this app you can check for food recipes <br> Manage your fridge inventory
+              <br>  Add expiry date <br>
+            </div>
+          </div>
+        </div>   
+     </div>
+    </div>
+  </body>
+</html>
