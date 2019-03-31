@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="/Style/style.css">
+    <meta charset="utf-8">
+    <title>Create</title>
+  </head>
+  <div class="gifs">
+    <img src="https://www.twomato.com/assets/images/loader.gif" alt="" id = "leftGif">
+    <div id = "frontTitle" >My Fridge</div>
+    <img src="https://www.twomato.com/assets/images/loader.gif" alt="" id = "rightGif">
+  </div>
+  <a href="/">Back to home</a>
+  <body id = "background">
+    <img src="/Style/food.jpg" alt="" id = "frontImage">
+    <div id = "createAccountBox">
+      <form class="" action="/createAccount" method="post">
+        <h2>First Name </h2>
+        <input type="text" name="FirstName" placeholder="First Name" value = "">
+        <br>
+        <h2>Last Name</h2>
+        <input type="text" name="LastName" placeholder="Last Name" value = "">
+        <br>
+        <h2>Username</h2>
+        <input type="text" name="Username" placeholder="Username" value = "">
+        <br>
+        <h2>Password</h2>
+        <input type="password" name="Password" placeholder="Password" value = "">
+        <br> <br>
+        <input type="submit" name="Create" value="Create" id = "create">
+        <p id = "incorrect">{{exists}}</p>
+    </div>
+  </body>
+</html>

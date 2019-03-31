@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content"IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script type="text/javascript" src = "/Scripts/script.js"></script>
+    <link rel="stylesheet" href="/Style/style.css">
+    <title>MyFridge</title>
+
+  </head>
+
+  <body onload="checkExpirationDate()">
+
+    <div>
+
+      <div id ="fridgeTitle" >My Fridge</div>
+
+      <div class="tabs">
+
+        <form  action="/fridge"> <button type="submit" class = "tab" > My Fridge </button></form>
+
+        <form  action="/recipes"> <button type="submit" class = "tab" > Recipes </button></form>
+
+        <form  action="/aboutus"> <button type="submit" class = "tababoutus" > About Us </button></form>
+
+      </div>
+
+      <form id="temp" class="signOut" action="/signIn" method="post">
+        <input type="submit" name="" value="Sign Out" id = "signOut">
+        <p id = "loggedIn">{{username}} is logged in</p>
+      </form>
+
+    </div>
+
+    <div class="wrapperfridge">
+      <div id="leftfridge">
+          <div class="fridge">
+              <h2>Fridge Items</h2>
+              <div id="addFoodButton"> Add Food </div>
+              <div id="addFoodForm">
+                <form action="/fridgefood" method="POST">
+                  Enter Food
+                  <input type="text" name="addFood" id="addFoodText"> <br>
+                  Expiration Date
+                  <input type="date" name="expirationDate" id="addFoodDate"> <br>
+                  <input type="submit" id="Displayfoodbutton" value="Add Food">
+                </form>
+
+            </div>
+          </div>
+
+          <div id="foodList">
+            {% for food in food_fridge %}
+            <div class="fridgefood-div">
+              <p class="foodName">{{food.name}}</p>
+              <img src="{{food.image}}">
+              <p class="foodExpiration">Expires {{food.expirationDate}}</p>
+              <form class="" action="/removeFood" method="post">
+                <input type="submit" name="" value="delete" id = "delete">
+                <input type="hidden" name="foodName" value="{{food.name}}">
+                <input type="hidden" name="expirationDate" value="{{food.expirationDate}}">
+              </form>
+            </div>
+            {% endfor %}
+          </div>
+
+        </div>
+          <div id="rightfridge">
+            <h2>Expiring Soon:</h2>
+            <div id="expiringSoon">
+
+            </div>
+            <h2>Expired:</h2>
+            <div id="expired">
+
+
+            </div>
+
+          </div>
+
+    </div>
+
+  </body>
+</html>

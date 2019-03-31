@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="/Style/style.css">
+    <meta charset="utf-8">
+    <script src="/Scripts/script.js"></script>
+    <title>Welcome</title>
+
+    <div class="gifs">
+      <img src="https://www.twomato.com/assets/images/loader.gif" alt="" id = "leftGif">
+      <div id = "frontTitle" >My Fridge</div>
+      <img src="https://www.twomato.com/assets/images/loader.gif" alt="" id = "rightGif">
+    </div>
+  </head>
+  <body id = "background" >
+    <img src="/Style/food.jpg" alt="" id="frontImage" >
+    <div id="loginBox">
+      <form method="post" action = "/">
+        <br>
+        <h2>Username</h2>
+        <input type="text" name="welcome_username" placeholder="username" value = "">
+        <br>
+        <h2>Password</h2>
+        <input type="password" name="welcome_password" placeholder="password" value = "">
+        <br>
+        <br>
+        <button id="loginbutton" type="submit" name="button">Login</button>
+        <br><br>
+      </form>
+
+      <a method="post" href="/createAccount">
+        <button id="createAccountbutton" type="submit">Create Account</button>
+      </a>
+
+
+      <p id = "incorrect">{{phrase}}</p>
+    </div>
+  </body>
+</html>
