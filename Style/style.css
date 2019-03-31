@@ -1,0 +1,570 @@
+/* Top part of every page */
+
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Poppins:300,400,500,600,700,800,900");
+.col-md-offset-right-1, .col-lg-offset-right-1 {
+  margin-right: 8.33333333%;
+}
+/* everything */
+body,
+html {
+margin:0;
+padding:0;
+background:#ECF1F2;
+}
+
+/* paragraphs font */
+p{
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* h1 fonts */
+h1{
+  font-size: 40px;
+  line-height: 48px;
+  font-family: "Poppins", sans-serif;
+  color: #908f8f;
+  font-weight: 500;
+  border-style: solid;
+  margin: 0;
+}
+
+h2{
+  font-family: "Poppins", sans-serif;
+  color: #000000ad;
+}
+
+h4{
+  font-size: 40px;
+  line-height: 48px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-weight: 500;
+  border-style: solid;
+  margin-bottom: 10px;
+}
+
+button{
+ width: 100%;
+ margin-left: auto;
+ margin-right: auto;
+ background-color: #ff5053;
+}
+
+form{
+  width: 100%;
+}
+
+button:hover{
+  transition: all 0.40s;
+  background-color: #d84244;
+  cursor: pointer;
+}
+
+/* header */
+
+.tabs{
+  display: flex;
+  margin-top: 1%;
+  width: 100%;
+  color: #f2f2f2;
+
+}
+
+.tab{
+
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  color: white;
+}
+
+.tababoutus {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  color: white;
+  background-color: #707885;
+
+}
+
+.tababoutus:hover{
+  background-color: #606671;
+  cursor: pointer;
+
+}
+
+.tabs a:hover {
+  background: #ddd;
+  color: black;
+  cursor: pointer;
+}
+
+/* About Us page */
+
+.container {
+  padding-top: 20px;
+  position: relative;
+  float: inherit;
+  display: flex;
+  justify-content: center;
+  /* padding-right: 100px; */
+}
+
+.overlay {
+  margin-top: 20px;
+  position: absolute;
+  width:360px;
+  height:360px;
+  border-radius:360px;
+  top: 0;
+  bottom: 0;
+  align:center;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: white;
+  display: block;
+}
+
+.container:hover .overlay {
+  opacity: 0.7;
+
+}
+
+.container:hover .text{
+  transition: scale(1);
+}
+
+.text{
+  padding-top: 30px;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.linkedIn{
+  height: 40px;
+  width: 40px;
+}
+
+.linkedIn:hover{
+  height: 45px;
+  width: 45px;
+}
+/* this is for every page title */
+#fridgeTitle {
+  text-align: center;
+  margin-top: 1%;
+  font-size: 65px;
+  line-height: 68px;
+  font-family: "Poppins", sans-serif;
+  color: #707885;
+  font-weight: 500;
+  border-style: solid;
+}
+
+/* recipes.html */
+.recipe-header {
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 20px;
+  outline: none;
+}
+ /* search bar */
+#search {
+  padding:7px;
+  background-color: white;
+  width:200px;
+  padding:7px;
+  border: 1px solid #607d8b;
+  background-repeat: no-repeat;
+}
+
+#submit{
+  padding: 7px;
+  background: gray;
+  border: 1px solid #607d8b;
+  color: white;
+  margin-left: -5px;}
+
+#submit:hover{
+  background: #333;
+  transition: all 0.40s;
+  background-color: #445963;
+  padding: 7px;
+  border: 1px solid #333;
+}
+
+.Savedtext{
+  font-size: 50px
+  color:white;
+  font-family: "Poppins", sans-serif;
+}
+
+.button {
+  padding: 5px 10px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  transform: translateY(1px);
+}
+
+.recipeButtons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+/* fridge.html */
+
+#foodExpiration {
+  color: white;
+  box-sizing: border-box;
+  display: none;
+  overflow: hidden;
+}
+
+.fridgefood-div:hover + #foodExpiration {
+  display:inline-table;
+}
+
+
+.fridgefood-div {
+  transition: all 0.2s ease-in-out;
+  color: darkgrey;
+ background: white;
+  box-sizing: border-box;
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.fridgefood-div:hover {
+  color: grey;
+ box-shadow: 0 13px 13px rgba(230, 228, 228, 0.4);
+}
+
+
+#delete{
+  font-size: 20px;
+  background-color: #FED6D6;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+#delete:hover{
+  background-color:#DCC7C7;
+}
+
+#Displayfoodbutton{
+border: 2px solid white;
+border-radius: 8px;
+color: grey;
+}
+
+#Displayfoodbutton:hover {
+  background-color: #f4f3f3;
+  color: black;
+   cursor: pointer;
+}
+/* columns for each page */
+
+/* AboutUs.html */
+
+.wrapperaboutus {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 770px){
+  .wrapperaboutus{ display: grid;
+  grid-template-columns: 1fr;
+  }
+}
+
+#leftaboutus{
+  background-color: #707885;
+  min-height: 450px;
+}
+
+#middleaboutus{
+  background-color: #88939cc9;
+  min-height: 450px;
+}
+
+#rightaboutus{
+  background-color: #fea5a669;
+  min-height: 450px;
+}
+
+/* heading */
+.wrapperrecipe {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100%;
+  min-height: 430px;
+  overflow: auto;
+}
+
+.wrapperfridge {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 430px;
+  overflow: auto
+}
+
+#recipeaddremovebox{
+
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -00px;
+  /*top: 275px;
+  left: 39%;*/
+  width: 300px;
+  height: 100px;
+  background-color: #CAEBF2;
+  border-radius: 30px;
+  text-align: center;
+  filter: opacity(90%)
+
+
+}
+
+#leftrecipe {
+  background-color: #ff5053db;
+  text-align: center;
+}
+
+#rightrecipe {
+  background-color: #CAEBF2;
+  text-align: center;
+}
+
+#footer {
+
+clear:both;
+padding: 5px 10px;
+background: white;
+
+
+
+}
+
+
+/* fridge.html */
+
+#rightfridge {
+  background-color: #CAEBF2;
+  text-align: center;
+}
+
+#leftfridge {
+  background-color: #ff5053db;
+  text-align: center;
+}
+
+#signOut{
+  height:30px;
+  width: 100px;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: #BBEFF4;
+  font-size: 20px;
+  font-style: italic;
+  color: #23585E;
+}
+
+#temp {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#loggedIn{
+  margin-left: auto;
+  white-space: normal;
+}
+
+#addFoodButton {
+  width: 100px;
+  color:white;
+  font-family: "Poppins", sans-serif;
+  background-color: #acc7dcd6;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 4px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+#addFoodButton:hover {
+  transition: all 0.40s;
+  background-color: #9f9aaa;
+
+}
+
+#addFoodForm {
+  background-color: #ec4c4e;
+  font-family: "Poppins", sans-serif;
+  display: none;
+  padding: 8px 3px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+}
+/* welcome.html */
+
+#frontImage{
+  position:relative;
+  height: 500px;
+  width: 100%;
+  filter: opacity(70%);
+}
+
+#incorrect{
+  font-size: 15px;
+  color: red;
+  margin-top: 5px;
+}
+
+.gifs{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+#leftGif{
+  width:220px;
+  height:120px;
+  margin-left: auto;
+}
+
+#rightGif{
+  width:220px;
+  height:120px;
+  margin-right: auto
+}
+
+#background{
+  background-color: #def2ee;
+
+}
+
+#frontTitle{
+  font-size: 80px;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  text-align: center;
+  padding-left: 5%;
+  display: inline-block;
+  margin-top: 1%;
+  color: grey;
+  width: auto;
+  position: relative;
+  justify-content: center;
+}
+
+#loginbutton{
+  text-align: center;
+  font-size: 16px;
+  color: black;
+  height: 30px;
+  width:80px;
+  border-radius: 10px;
+  background-color: #9b9b9b40;
+
+
+}
+#loginbutton:hover{
+  background: #85848440;
+  color: white;
+
+}
+
+#loginBox{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -450px;
+  /*top: 275px;
+  left: 39%;*/
+  width: 300px;
+  height: 360px;
+  background-color: white;
+  border-radius: 50px;
+  text-align: center;
+  filter: opacity(95%)
+}
+
+#createAccountbutton{
+  text-align: center;
+  font-size: 16px;
+  color: black;
+  height: 50px;
+  width:150px;
+
+  border-radius: 10px;
+  background-color: #9b9b9b40;
+
+}
+#createAccountbutton:hover{
+  background: #85848440;
+  color: white;
+}
+
+/* Create Account page */
+
+#create{
+  font-size: 20px; border-radius:10px
+}
+
+#create:hover{
+  background: #85848440;
+  color: white;
+}
+
+#createAccountTitle{
+  text-align: center;
+  font-size: 80px;
+  width: auto;
+  font-family: "Poppins", sans-serif;
+  color: grey;
+}
+
+#createAccountBox{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -480px;
+  /* top: 200px;
+  left: 39%; */
+  width: 300px;
+  height: 460px;
+  background-color: white;
+  border-radius: 50px;
+  text-align: center;
+  filter: opacity(95%);
+  display: flex;
+  vertical-align: center;
+}
