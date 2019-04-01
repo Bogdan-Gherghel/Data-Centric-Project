@@ -287,9 +287,9 @@ color: grey;
 }
 /* columns for each page */
 
-/* AboutUs.html */
+/* About.html */
 
-.wrapperaboutus {
+.wrapperabout {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
